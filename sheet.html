@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>10SFR Games: printable sheet</title>
+<style>
+  @page { size: A4 portrait; margin: 12mm; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif; color:#222; background:#eee; }
+  .page { width:210mm; min-height:297mm; margin:10px auto; padding:12mm; background:#fff; }
+  h1 { margin:0; text-align:center; font-size:34pt; color:#c4571f; line-height:1.1; }
+  .lead { text-align:center; margin:4mm 0 6mm; font-size:13pt; }
+  .main { display:flex; align-items:center; justify-content:center; gap:10mm; margin-bottom:8mm; }
+  .main img { width:62mm; height:62mm; image-rendering:pixelated; }
+  .main p { font-size:14pt; margin:0; max-width:80mm; }
+  .main p b { color:#c4571f; }
+  .row { display:grid; grid-template-columns:repeat(3,1fr); gap:6mm; }
+  .card { border:2px dashed #c4571f; border-radius:5mm; padding:4mm; text-align:center; }
+  .card .ic { width:20mm; height:20mm; border-radius:4mm; }
+  .card h2 { margin:2mm 0 2mm; font-size:15pt; }
+  .card .qr { width:44mm; height:44mm; image-rendering:pixelated; display:block; margin:0 auto 2mm; }
+  .card small { display:block; font-size:9pt; color:#555; }
+  .steps { margin-top:8mm; display:grid; grid-template-columns:1fr 1fr; gap:6mm; }
+  .steps div { border:1.5px solid #ccc; border-radius:4mm; padding:4mm 5mm; }
+  .steps h3 { margin:0 0 2mm; font-size:14pt; color:#c4571f; }
+  .steps ol { margin:0 0 0 5mm; padding:0; font-size:12pt; }
+  .steps li { margin:1.5mm 0; }
+  .tip { margin-top:6mm; text-align:center; font-size:11.5pt; }
+  .noprint { text-align:center; margin:10px; }
+  .noprint button { font:inherit; padding:8px 20px; border-radius:8px; border:0; background:#F47B3F; color:#fff; cursor:pointer; }
+  @media print {
+    body { background:#fff; }
+    .page { margin:0; padding:0; width:auto; min-height:0; }
+    .noprint { display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="noprint"><button onclick="window.print()">Print this sheet</button></div>
+<div class="page">
+  <h1>10SFR Games</h1>
+  <p class="lead">Play three games on your phone, and put them on your home screen.</p>
+
+  <div class="main">
+    <img src="qr/index.png" alt="QR code for the 10SFR games page">
+    <p><b>Scan this</b> with your phone camera to open the games page. Tap <b>Play</b> on a game, then follow the steps below.</p>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <img class="ic" src="biscuits/icons/icon-192.png" alt="">
+      <h2>Brody's Biscuits</h2>
+      <img class="qr" src="qr/biscuits.png" alt="QR code for Brody's Biscuits">
+      <small>Match three treats</small>
+    </div>
+    <div class="card">
+      <img class="ic" src="dice/icons/icon-192.png" alt="">
+      <h2>Dice Games</h2>
+      <img class="qr" src="qr/dice.png" alt="QR code for Dice Games">
+      <small>Six dice games in one</small>
+    </div>
+    <div class="card">
+      <img class="ic" src="stockman/icons/icon-192.png" alt="">
+      <h2>Max the Stockman</h2>
+      <img class="qr" src="qr/stockman.png" alt="QR code for Max the Stockman">
+      <small>Herd the cows</small>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div>
+      <h3>iPhone or iPad (Safari)</h3>
+      <ol>
+        <li>Scan the game's code and open it in <b>Safari</b>.</li>
+        <li>Tap the <b>Share</b> button (square with an arrow).</li>
+        <li>Tap <b>Add to Home Screen</b>.</li>
+        <li>Tap <b>Add</b>.</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Android (Chrome)</h3>
+      <ol>
+        <li>Scan the game's code and open it in <b>Chrome</b>.</li>
+        <li>Tap the <b>⋮</b> menu.</li>
+        <li>Tap <b>Install app</b> (or <b>Add to Home screen</b>).</li>
+        <li>Tap <b>Install</b>.</li>
+      </ol>
+    </div>
+  </div>
+  <p class="tip">You need the internet the first time. After that, the games work offline.</p>
+</div>
+</body>
+</html>

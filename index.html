@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2b1a0e">
+<title>10SFR Games</title>
+<style>
+  :root {
+    --bg:#2b1a0e; --panel:#3d2616; --ink:#fbefd2; --dim:#dcc79f; --gold:#ffcf5c; --orange:#F47B3F; --blue:#3F73B8;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; color:var(--ink); background:var(--bg); line-height:1.5;
+    font-family:"Trebuchet MS","Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  }
+  .wrap { max-width:980px; margin:0 auto; padding:20px 16px 40px; }
+  header { display:flex; gap:22px; align-items:center; flex-wrap:wrap; justify-content:center; text-align:center; margin-bottom:22px; }
+  header .txt { flex:1 1 320px; }
+  h1 { margin:0 0 6px; font-size:clamp(34px,7vw,56px); color:var(--gold); line-height:1.1; }
+  .lead { margin:0; color:var(--dim); font-size:1.1rem; }
+  .qrbox { background:#fff; padding:10px 10px 6px; border-radius:14px; text-align:center; color:#222; font-size:.85rem; flex:0 0 auto; }
+  .qrbox img { width:170px; height:170px; display:block; image-rendering:pixelated; }
+
+  .games { display:grid; gap:18px; }
+  .game { background:var(--panel); border:3px dashed var(--gold); border-radius:20px; padding:16px; }
+  .top { display:flex; gap:16px; align-items:center; }
+  .top img { width:92px; height:92px; border-radius:20px; flex:0 0 auto; box-shadow:0 4px 12px rgba(0,0,0,.45); }
+  h2 { margin:0 0 4px; font-size:1.6rem; color:var(--ink); }
+  .top p { margin:0; color:var(--dim); }
+  .play { display:inline-block; margin-top:10px; background:var(--orange); color:#fff; font-weight:bold; text-decoration:none;
+          padding:10px 22px; border-radius:14px; box-shadow:0 4px 0 #c4571f; }
+  .play:active { transform:translateY(3px); box-shadow:0 1px 0 #c4571f; }
+  details { margin-top:14px; background:rgba(0,0,0,.28); border-radius:12px; padding:10px 14px; }
+  summary { cursor:pointer; font-weight:bold; color:var(--gold); }
+  details h3 { margin:12px 0 4px; font-size:1.05rem; color:var(--ink); }
+  ol { margin:4px 0 4px 1.2em; padding:0; }
+  li { margin:3px 0; }
+
+  .general { margin-top:26px; background:var(--panel); border-radius:20px; padding:16px 20px; }
+  .general h2 { color:var(--gold); }
+  .general ul { margin:6px 0 0 1.2em; padding:0; }
+  footer { margin-top:24px; text-align:center; color:var(--dim); font-size:.9rem; }
+  kbd { background:rgba(255,255,255,.12); border-radius:6px; padding:0 6px; }
+  @media (max-width:520px) { .top img { width:72px; height:72px; border-radius:16px; } h2 { font-size:1.3rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="txt">
+      <h1>10SFR Games</h1>
+      <p class="lead">Three games to play on your phone. Tap a game to play it now, or follow the steps to put it on your home screen like a proper app.</p>
+    </div>
+    <div class="qrbox">
+      <img src="qr/index.png" alt="QR code for this page">
+      Scan to open this page
+    </div>
+  </header>
+
+  <main class="games">
+
+    <section class="game" id="biscuits">
+      <div class="top">
+        <img src="biscuits/icons/icon-192.png" alt="">
+        <div>
+          <h2>Brody's Biscuits</h2>
+          <p>Swap neighbouring treats to match three or more. Line up three chocolate biscuits to clear the pile. Stuck? Answer a fractions question to earn a lifeline.</p>
+          <a class="play" href="biscuits/">Play</a>
+        </div>
+      </div>
+      <details>
+        <summary>How to install on your phone</summary>
+        <h3>iPhone or iPad (use Safari)</h3>
+        <ol>
+          <li>Open <b>this page in Safari</b> and tap <b>Play</b> on Brody's Biscuits.</li>
+          <li>Tap the <b>Share</b> button (the square with an arrow pointing up).</li>
+          <li>Scroll down and tap <b>Add to Home Screen</b>.</li>
+          <li>Tap <b>Add</b>. The biscuit icon is now on your home screen.</li>
+        </ol>
+        <h3>Android (use Chrome)</h3>
+        <ol>
+          <li>Open <b>this page in Chrome</b> and tap <b>Play</b> on Brody's Biscuits.</li>
+          <li>Tap the <b>⋮</b> menu in the top corner.</li>
+          <li>Tap <b>Install app</b> (or <b>Add to Home screen</b>).</li>
+          <li>Tap <b>Install</b>. The biscuit icon is now on your home screen.</li>
+        </ol>
+      </details>
+    </section>
+
+    <section class="game" id="dice">
+      <div class="top">
+        <img src="dice/icons/icon-192.png" alt="">
+        <div>
+          <h2>Dice Games</h2>
+          <p>Six dice games in one: Pig, Snake Eyes, 10,000, Ship, Captain &amp; Crew, Shut the Box and Yacht. Play against friends or the computer.</p>
+          <a class="play" href="dice/">Play</a>
+        </div>
+      </div>
+      <details>
+        <summary>How to install on your phone</summary>
+        <h3>iPhone or iPad (use Safari)</h3>
+        <ol>
+          <li>Open <b>this page in Safari</b> and tap <b>Play</b> on Dice Games.</li>
+          <li>Tap the <b>Share</b> button (the square with an arrow pointing up).</li>
+          <li>Scroll down and tap <b>Add to Home Screen</b>.</li>
+          <li>Tap <b>Add</b>. The dice icon is now on your home screen.</li>
+        </ol>
+        <h3>Android (use Chrome)</h3>
+        <ol>
+          <li>Open <b>this page in Chrome</b> and tap <b>Play</b> on Dice Games.</li>
+          <li>Tap the <b>⋮</b> menu in the top corner.</li>
+          <li>Tap <b>Install app</b> (or <b>Add to Home screen</b>).</li>
+          <li>Tap <b>Install</b>. The dice icon is now on your home screen.</li>
+        </ol>
+      </details>
+    </section>
+
+    <section class="game" id="stockman">
+      <div class="top">
+        <img src="stockman/icons/icon-192.png" alt="">
+        <div>
+          <h2>Max the Stockman</h2>
+          <p>Help Max herd his cows through the gate and out into the pasture, before the aliens' Attractor Beam beams them up.</p>
+          <a class="play" href="stockman/">Play</a>
+        </div>
+      </div>
+      <details>
+        <summary>How to install on your phone</summary>
+        <h3>iPhone or iPad (use Safari)</h3>
+        <ol>
+          <li>Open <b>this page in Safari</b> and tap <b>Play</b> on Max the Stockman.</li>
+          <li>Tap the <b>Share</b> button (the square with an arrow pointing up).</li>
+          <li>Scroll down and tap <b>Add to Home Screen</b>.</li>
+          <li>Tap <b>Add</b>. The cow icon is now on your home screen.</li>
+        </ol>
+        <h3>Android (use Chrome)</h3>
+        <ol>
+          <li>Open <b>this page in Chrome</b> and tap <b>Play</b> on Max the Stockman.</li>
+          <li>Tap the <b>⋮</b> menu in the top corner.</li>
+          <li>Tap <b>Install app</b> (or <b>Add to Home screen</b>).</li>
+          <li>Tap <b>Install</b>. The cow icon is now on your home screen.</li>
+        </ol>
+      </details>
+    </section>
+
+  </main>
+
+  <section class="general">
+    <h2>Good to know</h2>
+    <ul>
+      <li>Install from <b>inside the game itself</b>, not from this page, so the right icon is added. Tap <b>Play</b> first, then follow the steps.</li>
+      <li>Open the link in <b>Safari</b> (iPhone) or <b>Chrome</b> (Android). If you tapped it in a messaging or school app, use <b>Open in browser</b> first.</li>
+      <li>The game needs the internet the first time you open it. After that it works <b>offline</b>.</li>
+      <li>Games remember things like best scores and settings on <b>your own phone</b>, so they won't appear on anyone else's.</li>
+    </ul>
+  </section>
+
+  <footer>10SFR Maths Games</footer>
+</div>
+</body>
+</html>
